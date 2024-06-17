@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us - Nyuki Smart</title>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fuggles&family=Mooli&family=Oswald:wght@600&family=Roboto:wght@100;300&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Bree+Serif&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../Css-files/scroll-top-button.css">
+    <link rel="stylesheet" href="../Css-files/content.css">
+    <script src="../hamburger.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="shortcut icon" href="Images/logo 3.png" type="image/x-icon">
+    <style>
+        body{
+            overflow-x: hidden;
+        }
+        .container {
+    padding: 20px;
+    text-align: center;
+}
+
+.footer {
+    background-color: #4b1f1f; /* Dark background color */
+    color: #fff; /* White text color */
+    padding: 20px 0; /* Top and bottom padding */
+    text-align: center;
+}
+
+.footer .foot_panel4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer .pages {
+    margin: 0;
+}
+
+.footer .pages h4 {
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+.footer .social-icons {
+    margin-bottom: 10px;
+}
+
+.footer .social-icons a {
+    color: #fff; /* White color for icons */
+    margin: 0 10px;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.footer .social-icons a:hover {
+    color: #ddd; /* Light gray on hover */
+}
+
+.footer p {
+    margin: 5px 0;
+    font-style: italic;
+}
+
+.footer .copyright {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.foot-panel2 {
+    background-color: #f8f8f8;
+    padding: 40px;
+    text-align: left;
+    margin-top: 30px;
+}
+
+.foot-panel2 h3 {
+    margin-bottom: 20px;
+    color: #4b1f1f;
+
+    font-size: 30px;
+    font-style: italic;
+}
+
+.project-details {
+    display: flex;
+
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.detail {
+    flex: 1 1 45%; /* Adjust the percentage to fit your design */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 20px;
+    margin: 10px;
+    background-color: #ecebeb;
+    border-radius: 8px;
+}
+
+.detail h4 {
+    margin-bottom: 10px;
+    color: #4b1f1f;
+    font-size: 32px;
+}
+
+.detail p {
+    margin: 0;
+    font-size: 24px;
+}
+        
+    </style>
+
+</head>
+
+<body>
+    <div class="head_container">
+        <!-- <header> -->
+        <!-- updated nav bar -->
+        <nav>
+            <div class="navigbar">
+                <div class="logo">
+                    <a href="../index.html"><img src="/Images/logo 3.png" height="40" class="transparent-image"></a>
+                </div>
+                <div>
+                <ul class="ul1">
+
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="menu.html" id="active-page">About Us</a></li>
+                    <li><a href="services.html">Team</a></li>
+                    
+                </ul>
+            </div>
+                    
+                
+                
+        </nav>
+        <!-- </header> -->
+
+        <div class="mainhead">
+            <h1>A B O U T </h1>
+           
+        </div>
+    </div>
+    <section class="menu_container">
+        <h2 data-aos="zoom-out-left" data-aos-duration="1000" data-aos-offset="170" data-aos-easing="ease-in-out">Smart Bee Keeping Project</h2>
+        <div class="menu_items" data-aos="zoom-out" data-aos-duration="1000" data-aos-offset="170" data-aos-easing="ease-in-out">
+            <div class="items">
+                <img src="/Images/sensors.webp" alt="Sensors">
+                <h3>Sensors</h3>
+                <p>Collects data on hive conditions</p>
+                <button class="btn" data-modal="modal1">Learn More</button>
+                <div class="modal-content" id="modal1">
+                    <span class="close" data-modal="modal1">&times;</span>
+                    <h2>Sensors</h2>
+                    <p>Sensors are crucial for collecting real-time data on the temperature, humidity, and other conditions within the beehive. This data helps in monitoring hive health and productivity. The sensors can detect changes in the hive environment that might indicate issues such as disease, pests, or other problems that need immediate attention. By using advanced sensors, beekeepers can gain insights into the hive's internal environment without disturbing the bees.</p>
+                </div>
+                <div class="star-rating">
+                    <button class="star-button" onclick="rateItem(this, 1)"><i class="fas fa-star"></i></button>
+                    <button class="star-button" onclick="rateItem(this, 2)"><i class="fas fa-star"></i></button>
+                    <button class="star-button" onclick="rateItem(this, 3)"><i class="fas fa-star"></i></button>
+                    <button class="star-button" onclick="rateItem(this, 4)"><i class="fas fa-star"></i></button>
+                    <button class="star-button" onclick="rateItem(this, 5)"><i class="fas fa-star"></i></button>
+                </div>
+            </div>
+            <div class="items">
+                <img src="/Images/micro.webp" alt="Microcontroller">
+                <h3>Microcontroller</h3>
+                <p>Processes sensor data and sends to cloud</p>
+                <button class="btn" data-modal="modal2">Learn More</button>
+                <div class="modal-content" id="modal2">
+                    <span class="close" data-modal="modal2">&times;</span>
+                    <h2>Microcontroller</h2>
+                    <p>The microcontroller processes data collected by sensors and transmits it to the cloud server. It acts as the brain of the operation, ensuring smooth data flow. The microcontroller can also trigger alerts if it detects abnormal conditions within the hive. This allows for immediate action to be taken, preventing potential issues from escalating. Advanced microcontrollers can even run algorithms locally to provide quick insights and pre-processed data to the cloud.</p>
+                </div>
+                <div class="star-rating">
+                    <button class="star-button" onclick="rateItem(this, 1)"><i class="fas fa-star"></i></button>
+                    <button class="star-button" onclick="rateItem(this, 2)"><i class="fas fa-star"></i></button>
+                    <button class="star-button" onclick="rateItem(this, 3)"><i class="fas fa-star"></i></button>
+                    <button class="star-button" onclick="rateItem(this, 4)"><i class="fas fa-star"></i></button>
+                    <button class="star-button" onclick="rateItem(this, 5)"><i class="fas fa-star"></i></button>
+                </div>
+            </div>
+            <div class="items">
+                <img src="/Images/cloud.avif" alt="Cloud Server">
+                <h3>Cloud Server</h3>
+                <p>Stores and analyzes hive data</p>
+                <button class="btn" data-modal="modal3">Learn More</button>
+                <div class="modal-content" id="modal3">
+                    <span class="close" data-modal="modal3">&times;</span>
+                    <h2>Cloud Server</h2>
+                    <p>The cloud server stores vast amounts of data and performs complex analyses to provide insights into the hive's conditions. It allows beekeepers to make informed decisions. The cloud server can run machine learning models to predict hive health trends and provide recommendations for hive management. By storing historical data, the cloud server helps in identifying patterns and anomalies that might be missed by manual observation.</p>
+                </div>
+                <div class="star-rating">
+                    <button class="star-button" onclick="rateItem(this, 1)"><i class="fas fa-star"></i></button>
+                    <button class="star-button" onclick="rateItem(this, 2)"><i class="fas fa-star"></i></button>
+                    <button class="star-button" onclick="rateItem(this, 3)"><i class="fas fa-star"></i></button>
+                    <button class="star-button" onclick="rateItem(this, 4)"><i class="fas fa-star"></i></button>
+                    <button class="star-button" onclick="rateItem(this, 5)"><i class="fas fa-star"></i></button>
+                </div>
+            </div>
+            <div class="items">
+                <img src="/Images/mkono.jfif" alt="Mobile App">
+                <h3>Mobile App</h3>
+                <p>Provides real-time access to hive data</p>
+                <button class="btn" data-modal="modal4">Learn More</button>
+                <div class="modal-content" id="modal4">
+                    <span class="close" data-modal="modal4">&times;</span>
+                    <h2>Mobile App</h2>
+                    <p>The mobile app gives beekeepers real-time access to hive data, alerts, and insights. It is user-friendly and essential for modern beekeeping management. The app provides a dashboard with key metrics and visualizations to help beekeepers quickly understand the state of their hives. It also sends push notifications for important events, such as changes in hive conditions or maintenance reminders. The app integrates with the cloud server to provide a seamless experience for data access and analysis.</p>
+                </div>
+                <div class="star-rating">
+                    <button class="star-button" onclick="rateItem(this, 1)"><i class="fas fa-star"></i></button>
+                    <button class="star-button" onclick="rateItem(this, 2)"><i class="fas fa-star"></i></button>
+                    <button class="star-button" onclick="rateItem(this, 3)"><i class="fas fa-star"></i></button>
+                    <button class="star-button" onclick="rateItem(this, 4)"><i class="fas fa-star"></i></button>
+                    <button class="star-button" onclick="rateItem(this, 5)"><i class="fas fa-star"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        document.querySelectorAll('.btn').forEach(button => {
+            button.addEventListener('click', function() {
+                const modalContent = this.nextElementSibling;
+                const parentItem = this.closest('.items');
+                parentItem.classList.add('show-modal');
+            });
+        });
+
+        document.querySelectorAll('.close').forEach(span => {
+            span.addEventListener('click', function() {
+                const parentItem = this.closest('.items');
+                parentItem.classList.remove('show-modal');
+            });
+        });
+
+        window.addEventListener('click', function(event) {
+            if (event.target.classList.contains('modal-content')) {
+                const parentItem = event.target.closest('.items');
+                parentItem.classList.remove('show-modal');
+            }
+        });
+
+        function rateItem(button, rating) {
+            console.log(`Rated ${rating} stars`);
+            // Add rating functionality here
+        }
+    </script>
+</body>
+</html>
+    
+   
+<div >
+    <h3 style="font-size: 48px; color: #ddd; text-align: center;">About Our Project</h3>
+    <div class="project-details">
+        <div class="detail">
+            <h4>Innovative Beekeeping Solutions</h4>
+            <p>We leverage state-of-the-art technology to provide beekeepers with tools that simplify hive management. From remote hive monitoring to data analytics, our solutions enhance productivity and hive health.</p>
+        </div>
+        <div class="detail">
+            <h4>Sustainable Practices</h4>
+            <p>Our commitment to sustainability drives us to develop eco-friendly beekeeping methods. We aim to reduce the environmental impact of beekeeping while ensuring the welfare of bees and the quality of their products.</p>
+        </div>
+        <div class="detail">
+            <h4>Community Empowerment</h4>
+            <p>We empower beekeepers with knowledge and resources. Through training programs, workshops, and community support, we help beekeepers adopt best practices and improve their livelihoods.</p>
+        </div>
+        <div class="detail">
+            <h4>Research and Development</h4>
+            <p>Our dedicated R&D team continuously explores new ways to improve beekeeping. By collaborating with experts and conducting field studies, we stay at the forefront of innovation in apiculture.</p>
+        </div>
+    </div>
+</div>
+</div>
+
+        
+
+            
+            
+        
+
+
+        <div class="foot_panel4">
+            <div class="pages">
+                <h4>Follow Us</h4>
+        
+                <div class="social-icons">
+                    <a class="fa-brands fa-facebook" href="https://facebook.com" target="_blank"></a>
+                    <a class="fa-brands fa-instagram" href="https://instagram.com" target="_blank"></a>
+                    <a class="fa-brands fa-x-twitter" href="https://twitter.com" target="_blank"></a>
+                    
+                
+                </div>
+                <p>Stay connected with us on social media for the latest updates.</p>
+                <div class="copyright">
+                    &copy; <span id="copyright-year"></span> Smart Nyuki Solutons - All Rights Reserved | <span id="author"><a href="https://www.linkedin.com/charles-mwangi-83a54524b/" target="_blank">charles-mwangi</a></span>
+                </div>
+            </div>
+        </div>
+        
+    </footer>
+    <button id="scroll-top-button" class="scroll-top-button" onclick="goToTop()">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="white"
+            class="arrow">
+            <path d="M440-160v-487L216-423l-56-57 320-320 320 320-56 57-224-224v487h-80Z" />
+        </svg>
+    </button>
+
+    <script>document.getElementById("copyright-year").textContent = new Date().getFullYear();</script>
+    <script src="./MenuAPI.js"></script>
+    <script src="menu.js">
+        function redirectLogin() {
+            window.location.href = "login.html";
+        }
+        function redirectSignup() {
+            window.location.href = "signup.html";
+        }
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init(
+        {
+          duration: 1000, 
+          easing: 'ease', 
+          once: false, 
+        }
+      );
+    </script>
+    <script src="top.js"></script>
+</body>
+
+</html>
