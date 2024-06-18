@@ -113,152 +113,46 @@
     margin: 10px;
     background-color: #ecebeb;
     border-radius: 8px;
+    text-align: center;
+  font-family: 'Roboto', sans-serif;
+    color: #4b1f1f;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 600;
+
 }
 
 .detail h4 {
     margin-bottom: 10px;
-    color: #4b1f1f;
-    font-size: 32px;
+    font-style: italic;
+    font-size: 24px;
+
+    
 }
 
 .detail p {
-    margin: 0;
-    font-size: 24px;
+    margin-bottom: 10px;
+    font-style: italic;
+    font-size: 18px;
+    font-weight: 600;
+
+  
+}
+.detail:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    background-color: #4b1f1f;
+    color: white;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.5s;
+
 }
 
         
     </style>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        .menu_container {
-            padding: 20px;
-        }
-        .menu_items {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
-        .items {
-            flex: 1 1 calc(25% - 20px);
-            box-sizing: border-box;
-            border: 1px solid #ccc;
-            border-radius: 8px;
-            padding: 20px;
-            position: relative;
-            background: #fff;
-            transition: transform 0.3s;
-        }
-        .items img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 8px;
-        }
-        .items h3 {
-            margin: 10px 0;
-            font-size: 1.5em; /* Adjust font size */
-        }
-        .items p {
-            margin: 10px 0;
-        }
-        .btn {
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            margin: 10px 2px;
-            cursor: pointer;
-            border-radius: 8px;
-            transition: background-color 0.3s;
-        }
-        .btn:hover {
-            background-color: #45a049;
-        }
-        .modal-content {
-            display: none;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background-color: #fff;
-            padding: 20px;
-            border: 1px solid #ccc;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-            z-index: 10;
-            border-radius: 8px;
-        }
-        .show-modal .modal-content {
-            display: block;
-        }
-        .close {
-            color: #aaa;
-            float: right;
-            font-size: 28px;
-            font-weight: bold;
-        }
-        .close:hover,
-        .close:focus {
-            color: black;
-            text-decoration: none;
-            cursor: pointer;
-        }
-        .star-rating {
-            display: flex;
-            gap: 5px;
-            margin-top: 10px;
-        }
-        .star-button {
-            background: none;
-            border: none;
-            cursor: pointer;
-            color: #ffd700;
-        }
-        @media (max-width: 1200px) {
-            .items {
-                flex: 1 1 calc(33.333% - 20px);
-            }
-            .items h3 {
-                font-size: 1.4em;
-            }
-            .btn {
-                font-size: 15px;
-                padding: 8px 18px;
-            }
-        }
-        @media (max-width: 992px) {
-            .items {
-                flex: 1 1 calc(50% - 20px);
-            }
-            .items h3 {
-                font-size: 1.3em;
-            }
-            .btn {
-                font-size: 14px;
-                padding: 7px 16px;
-            }
-        }
-        @media (max-width: 768px) {
-            .items {
-                flex: 1 1 100%;
-            }
-            .items h3 {
-                font-size: 1.2em;
-            }
-            .btn {
-                font-size: 13px;
-                padding: 6px 14px;
-            }
-        }
-    </style>
-
+    
 </head>
 
 <body>
@@ -274,8 +168,8 @@
                 <ul class="ul1">
 
                     <li><a href="../index.html">Home</a></li>
-                    <li><a href="menu.html" id="active-page">About Us</a></li>
-                    <li><a href="services.html">Team</a></li>
+                    <li><a href="about.html" id="active-page">About Us</a></li>
+                    <li><a href="team.html">Team</a></li>
                     
                 </ul>
             </div>
@@ -303,13 +197,7 @@
                     <h2>Sensors</h2>
                     <p>Sensors are crucial for collecting real-time data on the temperature, humidity, and other conditions within the beehive. This data helps in monitoring hive health and productivity. The sensors can detect changes in the hive environment that might indicate issues such as disease, pests, or other problems that need immediate attention. By using advanced sensors, beekeepers can gain insights into the hive's internal environment without disturbing the bees.</p>
                 </div>
-                <div class="star-rating">
-                    <button class="star-button" onclick="rateItem(this, 1)"><i class="fas fa-star"></i></button>
-                    <button class="star-button" onclick="rateItem(this, 2)"><i class="fas fa-star"></i></button>
-                    <button class="star-button" onclick="rateItem(this, 3)"><i class="fas fa-star"></i></button>
-                    <button class="star-button" onclick="rateItem(this, 4)"><i class="fas fa-star"></i></button>
-                    <button class="star-button" onclick="rateItem(this, 5)"><i class="fas fa-star"></i></button>
-                </div>
+                
             </div>
             <div class="items">
                 <img src="/Images/micro.webp" alt="Microcontroller">
@@ -318,16 +206,10 @@
                 <button class="btn" data-modal="modal2">Learn More</button>
                 <div class="modal-content" id="modal2">
                     <span class="close" data-modal="modal2">&times;</span>
-                    <h2>Microcontroller</h2>
+                    <h2>Micro<br>controller</h2>
                     <p>The microcontroller processes data collected by sensors and transmits it to the cloud server. It acts as the brain of the operation, ensuring smooth data flow. The microcontroller can also trigger alerts if it detects abnormal conditions within the hive. This allows for immediate action to be taken, preventing potential issues from escalating. Advanced microcontrollers can even run algorithms locally to provide quick insights and pre-processed data to the cloud.</p>
                 </div>
-                <div class="star-rating">
-                    <button class="star-button" onclick="rateItem(this, 1)"><i class="fas fa-star"></i></button>
-                    <button class="star-button" onclick="rateItem(this, 2)"><i class="fas fa-star"></i></button>
-                    <button class="star-button" onclick="rateItem(this, 3)"><i class="fas fa-star"></i></button>
-                    <button class="star-button" onclick="rateItem(this, 4)"><i class="fas fa-star"></i></button>
-                    <button class="star-button" onclick="rateItem(this, 5)"><i class="fas fa-star"></i></button>
-                </div>
+                
             </div>
             <div class="items">
                 <img src="/Images/cloud.avif" alt="Cloud Server">
@@ -339,13 +221,7 @@
                     <h2>Cloud Server</h2>
                     <p>The cloud server stores vast amounts of data and performs complex analyses to provide insights into the hive's conditions. It allows beekeepers to make informed decisions. The cloud server can run machine learning models to predict hive health trends and provide recommendations for hive management. By storing historical data, the cloud server helps in identifying patterns and anomalies that might be missed by manual observation.</p>
                 </div>
-                <div class="star-rating">
-                    <button class="star-button" onclick="rateItem(this, 1)"><i class="fas fa-star"></i></button>
-                    <button class="star-button" onclick="rateItem(this, 2)"><i class="fas fa-star"></i></button>
-                    <button class="star-button" onclick="rateItem(this, 3)"><i class="fas fa-star"></i></button>
-                    <button class="star-button" onclick="rateItem(this, 4)"><i class="fas fa-star"></i></button>
-                    <button class="star-button" onclick="rateItem(this, 5)"><i class="fas fa-star"></i></button>
-                </div>
+               
             </div>
             <div class="items">
                 <img src="/Images/mkono.jfif" alt="Mobile App">
@@ -357,13 +233,7 @@
                     <h2>Mobile App</h2>
                     <p>The mobile app gives beekeepers real-time access to hive data, alerts, and insights. It is user-friendly and essential for modern beekeeping management. The app provides a dashboard with key metrics and visualizations to help beekeepers quickly understand the state of their hives. It also sends push notifications for important events, such as changes in hive conditions or maintenance reminders. The app integrates with the cloud server to provide a seamless experience for data access and analysis.</p>
                 </div>
-                <div class="star-rating">
-                    <button class="star-button" onclick="rateItem(this, 1)"><i class="fas fa-star"></i></button>
-                    <button class="star-button" onclick="rateItem(this, 2)"><i class="fas fa-star"></i></button>
-                    <button class="star-button" onclick="rateItem(this, 3)"><i class="fas fa-star"></i></button>
-                    <button class="star-button" onclick="rateItem(this, 4)"><i class="fas fa-star"></i></button>
-                    <button class="star-button" onclick="rateItem(this, 5)"><i class="fas fa-star"></i></button>
-                </div>
+                
             </div>
         </div>
     </section>
@@ -474,6 +344,18 @@
           once: false, 
         }
       );
+    </script>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const navToggle = document.querySelector('.nav-toggle');
+            const navList = document.querySelector('.nav-list');
+          
+            navToggle.addEventListener('click', function () {
+              navList.classList.toggle('active');
+              navToggle.classList.toggle('open');
+            });
+          });
     </script>
     <script src="top.js"></script>
 </body>

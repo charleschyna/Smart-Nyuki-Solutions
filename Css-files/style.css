@@ -427,6 +427,7 @@ body {
     display: flex;
     /* padding: 10px; */
     justify-content: space-evenly;
+    align-items: center;
 }
 
 .foot-panel2 ul {

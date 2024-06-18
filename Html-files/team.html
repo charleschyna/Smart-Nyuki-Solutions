@@ -19,6 +19,133 @@
     <link rel="stylesheet" type="text/css" href="../Css-files/services1.css">
     <link rel="stylesheet" href="../Css-files/scroll-top-button.css">
     <style>
+        /* General Section Styling */
+.service_container {
+    padding: 50px;
+    background-color: #f5f5f5;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+    transition: all 0.3s;
+    opacity: 1;
+
+}
+
+.section1 {
+    text-align: center;
+    margin-bottom: 30px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    transition: all 0.3s;
+    opacity: 1;
+    padding: 50px 0;
+}
+
+.section1 hr {
+    width: 60%;
+    margin: 0 auto 20px;
+    border: 0;
+    border-top: 2px solid #ddd;
+    opacity: 0;
+    transition: opacity 0.3s;
+    transition: all 0.3s;
+
+}
+
+.section__title {
+    font-size: 2.5em;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    transition: all 0.3s;
+}
+
+/* Testimonial Container */
+.testimonal__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    transition: all 0.3s;
+   
+   
+}
+
+.testimonal__swiper {
+    flex: 1 1 300px;
+    max-width: 300px;
+    margin: 15px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.testimonal__swiper:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.testimonal__card {
+    text-align: center;
+    padding: 20px;
+}
+
+.testimonal__image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    object-fit: cover;
+    object-position: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.testimonal__title {
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.testimonal__description {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.linkedin-link {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #0077b5;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-top: 10px;
+
+    
+}
+
+.linkedin-link:hover {
+    background-color: #005582;
+    color: #fff;
+    transition: background-color 0.3s;
+    transition: all 0.3s;
+
+}
+
+.linkedin-link i {
+    margin-left: 5px;
+}
+
         
     </style>
 </head>
@@ -45,10 +172,10 @@
                     <div>
                     <ul class="ul1">
                         <li><a href="../index.html">Home</a></li>
-                        <li><a href="menu.html">About</a></li>
-                        <li><a href="services.html" id="active-page">Team</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="team.html" id="active-page">Team</a></li>
                         
-                    </ul>e
+                    </ul>
                     </div>
                 </div>
             </nav>
@@ -114,13 +241,7 @@
                                     
                                     </p>
 
-                                    <div class="testimonal__stars">
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star-half-stroke"></i>
-                                    </div>
+                                    
                                     <a href="https://www.linkedin.com/in/charles-mwangi" target="_blank" class="linkedin-link">Coonect <br> <i class="fab fa-linkedin"></i></a>
                                 </article>
                             </div>
@@ -136,13 +257,7 @@
                                         IOT ENGINEER
                                     </p>
 
-                                    <div class="testimonal__stars">
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star-half-stroke"></i>
-                                    </div>
+                                   
                                     <a href="https://www.linkedin.com/in/brian-rop" target="_blank" class="linkedin-link">Connect<br> <i class="fab fa-linkedin"></i></a>
                                 </article>
                             </div>
@@ -158,13 +273,7 @@
                                         IOT ENGINEER
                                     </p>
 
-                                    <div class="testimonal__stars">
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star-half-stroke"></i>
-                                    </div>
+                                   
                                     <a href="https://www.linkedin.com/in/james-karanja" target="_blank" class="linkedin-link"> Connect <br> <i class="fab fa-linkedin"></i></a>
                                 </article>
 
@@ -180,13 +289,6 @@
                                         CLOUD ENGINEER
                                     </p>
 
-                                    <div class="testimonal__stars">
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star-half-stroke"></i>
-                                    </div>
                                     <a href="https://www.linkedin.com/in/shem-thuo" target="_blank" class="linkedin-link"> Connect <br> <i class="fab fa-linkedin"></i></a>
                                 </article>
                             </div>
@@ -202,14 +304,7 @@
                                         MACHINE LEARNING ENGINEER
                                     </p>
 
-                                    <div class="testimonal__stars">
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star-half-stroke"></i> 
-                                    </div>
-                                
+                                   
                                 <a href="https://www.linkedin.com/in/methusella-nyongesa" target="_blank" class="linkedin-link">Connect <br><i class="fab fa-linkedin"></i></a>
                                 </article>
                                 
@@ -226,13 +321,7 @@
                                         UI/UX DESIGNER
                                     </p>
 
-                                    <div class="testimonal__stars">
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star-half-stroke"></i>
-                                    </div>
+                                    
                                 
                                 <a href="https://www.linkedin.com/in/gerald-njamura" target="_blank" class="linkedin-link">Connect <br> <i class="fab fa-linkedin"></i></a>
                                 </article>
@@ -250,14 +339,7 @@
                                         BACK-END DEVELOPER
                                     </p>
 
-                                    <div class="testimonal__stars">
-
-                                         <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star-half-stroke"></i>
-                                    </div>
+                                    
                                     <a href="https://www.linkedin.com/in/chrispin-maina" target="_blank" class="linkedin-link"> CONNECT <br><i class="fab fa-linkedin"></i></a>
 
                                 </article>
