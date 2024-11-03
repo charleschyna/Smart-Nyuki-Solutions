@@ -252,11 +252,12 @@ body {
   justify-content: center;
   align-items: center;
   color: white;
+
   
 }
 
 .service_container:before {
-  background-image: url(/Images/honey-bee-bee-bees-insect.jpg);
+  background-image: url(/Smart-Nyuki-Solutions/Images/honey-bee-bee-bees-insect.jpg);
   content: "";
   position: absolute;
   
