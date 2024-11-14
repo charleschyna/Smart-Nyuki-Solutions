@@ -253,6 +253,115 @@
                 min-width: 100%;
             }
         }
+
+        /* Field Work Section */
+        .fieldwork-section {
+            padding: 60px 20px;
+            text-align: center;
+            background: linear-gradient(135deg, #fefefe, #e0f7fa);
+            position: relative;
+        }
+
+        .fieldwork-section h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            font-weight: 700;
+            color: #0d47a1;
+            animation: fadeInDown 1s ease-out;
+        }
+
+        .fieldwork-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Individual field work card */
+        .fieldwork-card {
+            background-color: #fff;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+            border-radius: 8px;
+            overflow: hidden;
+            width: 300px;
+            transition: transform 0.3s ease;
+            animation: fadeInUp 1s ease;
+        }
+
+        .fieldwork-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .fieldwork-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .fieldwork-card:hover img {
+            transform: scale(1.1);
+        }
+
+        .fieldwork-card-content {
+            padding: 20px;
+            text-align: left;
+        }
+
+        .fieldwork-card-content h3 {
+            font-size: 1.5em;
+            color: #0d47a1;
+            margin-bottom: 10px;
+        }
+
+        .fieldwork-card-content p {
+            font-size: 1em;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        /* Button styling */
+        .fieldwork-card-content a {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            font-weight: 500;
+            color: #fff;
+            background-color: #0d47a1;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .fieldwork-card-content a:hover {
+            background-color: #1565c0;
+        }
+
+        /* Animations */
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    
     </style>
     
     <section class="service_container">
@@ -278,6 +387,41 @@
                 <a href="/Html-files/about.html" class="btn" style="font-style:italic;">learn more</a>
             </div>
         </div>
+        </section>
+
+        <section class="fieldwork-section">
+            <h2>Our Field Work</h2>
+            <div class="fieldwork-content">
+                <!-- Card 1 -->
+                <div class="fieldwork-card animate__animated animate__fadeInUp">
+                    <img src="https://via.placeholder.com/300x200" alt="Field Image 1">
+                    <div class="fieldwork-card-content">
+                        <h3>Apiary Inspection</h3>
+                        <p>Regular checks to ensure bee health and hive productivity in rural settings.</p>
+                        <a href="#" class="explore-btn">Explore More</a>
+                    </div>
+                </div>
+    
+                <!-- Card 2 -->
+                <div class="fieldwork-card animate__animated animate__fadeInUp animate__delay-1s">
+                    <img src="https://via.placeholder.com/300x200" alt="Field Image 2">
+                    <div class="fieldwork-card-content">
+                        <h3>Data Collection</h3>
+                        <p>Using smart sensors to collect temperature and humidity data in real time.</p>
+                        <a href="#" class="explore-btn">Explore More</a>
+                    </div>
+                </div>
+    
+                <!-- Card 3 -->
+                <div class="fieldwork-card animate__animated animate__fadeInUp animate__delay-2s">
+                    <img src="https://via.placeholder.com/300x200" alt="Field Image 3">
+                    <div class="fieldwork-card-content">
+                        <h3>Training Sessions</h3>
+                        <p>Educating local beekeepers on smart beekeeping technology for better yield.</p>
+                        <a href="#" class="explore-btn">Explore More</a>
+                    </div>
+                </div>
+            </div>
         </section>
         
 
@@ -495,7 +639,40 @@
   }, 500)
 });
 
-</script
+</script>
+<script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("slide");
+        let dots = document.getElementsByClassName("dot");
+    
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+    
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+    
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+    
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+    }
+    </script>
+    
 
 
 </html>
